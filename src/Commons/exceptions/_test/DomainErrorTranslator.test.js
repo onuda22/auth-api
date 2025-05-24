@@ -28,7 +28,7 @@ describe('DomainErrorTranslator', () => {
       )
     ).toStrictEqual(
       new InvariantError(
-        'tidak dapat membuat user baru karena username melebihi batas limir'
+        'tidak dapat membuat user baru karena username melebihi batas limit'
       )
     );
     expect(

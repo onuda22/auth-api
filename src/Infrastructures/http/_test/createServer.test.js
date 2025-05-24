@@ -110,7 +110,7 @@ describe('HTTP Server', () => {
       expect(response.statusCode).toEqual(400);
       expect(responseJson.status).toEqual('fail');
       expect(responseJson.message).toEqual(
-        'tidak dapat membuat user baru karena karakter username melebihi batas limit'
+        'tidak dapat membuat user baru karena username melebihi batas limit'
       );
     });
 
@@ -161,7 +161,7 @@ describe('HTTP Server', () => {
       const responseJson = JSON.parse(response.payload);
       expect(response.statusCode).toEqual(400);
       expect(responseJson.status).toEqual('fail');
-      expect(responseJson.message).toEqual('username telah terpakai');
+      expect(responseJson.message).toEqual('username tidak tersedia');
     });
   });
 });
